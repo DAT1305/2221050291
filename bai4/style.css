@@ -1,0 +1,28 @@
+.title2{
+    border-radius: 10px;
+}
+.title2 span {
+    color: blue;
+}
+.title2:hover span {
+    background-color: green;
+    border-radius: 10px;
+    padding-left: 10rem;
+    font-weight: bold;
+}
+
+.box1{
+    background-color: red;
+    /* 2 gias trị : trên dưới , trái phải */
+    /* margin :50px 10px 100px 30px ; */
+    margin: auto;
+}
+.box2{
+    background-color: rgb(53, 6, 207);
+}
+.box3{
+    background-color: rgb(255, 255, 255);
+}
+
+.box1 .box2 {
+    background-color: green !important; }

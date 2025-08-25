@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 4 CSS</title>
+    <style>
+        p{
+            color: rgb(255, 255, 255) ;
+            background-color: color-mix(in srgb, red  50%, blue 50%);
+            max-width: fit-content;
+
+        }
+        #title:hover{
+            color: red;
+
+        }
+        .title2{
+            background-color: #fb0000;
+            color: rgb(10, 10, 10);
+            font-size: 10rem;
+        }
+        .title2:hover {
+            color:pink;
+            
+        }
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style = "color: blue;background-color: rgb(209, 180, 180); max-width:fit-content; border-radius: 10px; font-size: 1rem;" >inline style</h1>
+    <p id = "title">internal style sheet</p>
+    <p class ="title2">black <span style ="color: white; ">pink</span></p>
+
+
+
+
+<p >
+        <div class ="box1">box1</div>
+    <div class ="box2">box2</div>
+    <div class ="box3">box3</div>
+</p>
+  
+</body>
+</html>
