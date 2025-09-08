@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    background-color: rgb(227, 28, 28);
+    height: 1000px;
+}
+.left-body{
+    background-color: aquamarine;
+    width: 20%;
+}
+.mid-body{
+    background-color: blue;
+    width: 60%;
+}
+.right-body{
+    background-color: bisque;
+    width: 20%;
+}
+.but{
+    background-color: rgb(137, 137, 137);
+    border-radius: 40%;
+    
+}

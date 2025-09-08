@@ -2,7 +2,7 @@ nav{
     
     
 }
-ul{
+.ul-menu{
     background-color: blue;
     color: #fff;
     gap :20px;
@@ -11,11 +11,11 @@ ul{
     
 }
 li a {
-    color :#fff;
+    color :#000000;
     text-decoration: none;
     
 }
-li {
+.border{
     list-style: none;
     
 }
@@ -43,4 +43,27 @@ header{
 .child-tintuc{
     width: 100%;
     height: 300px;
+}
+.tintuc-minibox{
+    width: 15%;
+}
+.tintuc{
+    background-color: blue;
+    justify-content: space-between;
+    color: #fff;
+    padding: 20px;
+    margin: 5px 0 ;
+}
+.notifi-box{
+    display: flex;
+}
+.notifi-link{
+    width: 60%;
+}
+.ul-link-noti{
+    width:100% ;
+    
+}
+.div-thongbao{
+    width: 100%;
 }
