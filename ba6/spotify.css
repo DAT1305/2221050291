@@ -20,3 +20,20 @@
     border-radius: 40%;
     
 }
+.song{
+    overflow: auto;
+}
+.giua-listsong{
+    justify-content: space-between;
+    padding-top: 10px;
+    
+}
+.giua-tiltesong{
+    display:flex  ;
+}
+.img-song img{
+    width: 50px;
+}
+.giua-image-song img{
+    width: 40px;
+}
