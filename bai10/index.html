@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script src = "index.js">
+
+    </script>
+</head>
+<body>
+    <script>
+        //để viết chú thích js dùng kí tự //
+        document.writeln("hello world" + "<br>");
+        let HoTen = "Nguyen Dinh Dat ";
+        document.writeln(HoTen + "<br>");
+        //hằng
+        const pi = 3.14;
+
+
+        let SoThuNhat = 10;
+        let SoThuHai = 5 ;
+        
+        let KetQua = 0;
+        KetQua = SoThuNhat + SoThuHai ;
+        document.writeln(KetQua + "<br>");
+
+         KetQua = SoThuNhat - SoThuHai ;
+         document.writeln(KetQua + "<br>");
+
+
+
+
+         //chia
+       KetQua = SoThuNhat / SoThuHai ;
+        document.writeln(KetQua + "<br>");
+
+        KetQua = SoThuNhat * SoThuHai ;
+        document.writeln(KetQua + "<br>");
+
+
+        KetQua = SoThuNhat % SoThuHai ;
+        document.writeln(KetQua + "<br>");
+
+        let SoThuBa = SoThuNhat++ ;
+        KetQua = SoThuNhat + SoThuHai + SoThuBa ;
+        document.writeln(KetQua + "<br>");
+        let Check = 0;
+        let CanhBao = "da toi gioi han ";
+        while(Check < SoThuNhat){
+            Check ++ ;
+           document.writeln(Check + "<br>");
+        }
+        document.writeln("check hiện tại =" + Check + "<br>");
+        
+        for(let i = 0 ; i < Check ; i++)
+        {
+            document.writeln(i + "<br>");
+            // '==' so sánh giá trí , chỉ quan tâm tới giá trị '===' so sánh cả gia trị và kiểu giữ liệu '1=' và '!==' tương tự
+            if(i === 5){
+                document.writeln(CanhBao  + i +"<br>");
+                break
+                
+            }
+
+            
+        }
+        let arr = new Array(6);
+        function Fill(value){
+            for(let i = 0 ; i < arr.length ; i++){
+                arr[i] = value;
+            }
+            return arr; //khi gán cho biến khác ở đây là mang
+        }
+        let mang = Fill(7);
+        document.writeln(mang);
+
+        
+        
+
+
+        SoThuNhat += SoThuHai
+        document.writeln(SoThuNhat + "<br>");
+        let NamNay = 2024;
+
+        let ThongTinSinhVien = {
+            HoTen : "Nguyen Dinh Dat " ,
+            Tuoi : 20, 
+            GioiTinh: true,
+            Lop: "khoa hoc may tinh ",
+            
+
+        }
+        let DiaChiDinhDat = {
+            ThanhPho: "Hải Dương",
+            QuanHuyen: "Hà Bắc",
+            
+        }
+        ThongTinSinhVien.Diachi = DiaChiDinhDat;
+
+
+        document.writeln("xin chao " + ThongTinSinhVien.HoTen + "Lop " + ThongTinSinhVien.Lop  +  ThongTinSinhVien.Diachi.QuanHuyen + " " + ThongTinSinhVien.Diachi.ThanhPho +  " " +(NamNay - ThongTinSinhVien.Tuoi) );
+        //parseInt
+        //parseFloat
+        let SoTHuBa = "4";
+        let SoThuBon = parseInt(SoTHuBa ) ;
+        document.writeln(typeof  SoThuBon);
+    
+    </script>
+</body>
+</html>
