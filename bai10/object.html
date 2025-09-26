@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+        let MaDonHang ={
+            MaDonHang: "31313218",
+            ThongTInKhachHang: {
+            HoTen: " nguyen dinh dat",
+            SoDienThoai: "0123456789",
+            TrangThai: true 
+            },
+            SanPham1: {
+                MaSanPham: "JQK123",
+                TenSanPham: "CaPhe",
+                SoLuong: "12",
+                GiaTien: "20000"
+            },
+            SanPham2: {
+                MaSanPham: "JQK1232",
+                TenSanPham: "matcha",
+                SoLuong: "122",
+                GiaTien: "200000"
+            },
+            SanPham3: {
+                MaSanPham: "JQKhtml",
+                TenSanPham: "trà sữa",
+                SoLuong: "1231",
+                GiaTien: "204000"
+            },
+          
+            TrangThaiThanhToan: true,
+
+
+            DiaChiGiaoHang: "thon 8 Kim Binh Xa Dan thanh pho binh duong"
+        }
+        let gia1 = parseInt(MaDonHang.SanPham1.GiaTien);
+        let gia2 = parseInt(MaDonHang.SanPham2.GiaTien);
+
+        let gia3 = parseInt(MaDonHang.SanPham3.GiaTien);
+
+        
+        document.writeln("tong gia trị dơn hàng là " + (gia1 + gia2 + gia3));
+        let HoTen = "nguyenDInhdat";
+        document.writeln(HoTen.length);
+
+        let mystring = "he llo";
+        
+         document.writeln( mystring[0] );
+      //   document.writeln( mystring.slice(1,5)); //ket qua : ello bắt đầu là 1 kết thúc là 5
+         document.writeln( mystring.replace("hello" , "H")); //ket qua : ell
+         
+         document.writeln( mystring.toUpperCase()); //ket qua : ell
+         document.writeln( mystring.indexOf("h")); //kiem tra su ton tai
+
+         document.writeln( mystring.includes("h")); //kiem tra su ton tai
+        // if( (mystring.indexOf("")) === -1 ){
+          // document.writeln("khong ton tai");
+       //  }
+        document.writeln( mystring.split(2)); //kiem tra su ton tai
+
+       document.writeln(  mystring.startsWith("h"));
+        //rut gọn int
+        let pi = 3.1424241;
+      document.writeln(  pi.toFixed(2));
+
+     // kiểm tra xem có phải num
+     //isNaN is not a numbẻ
+    
+      document.writeln(isNaN("10"));
+        let ToDay = new Date();
+        document.writeln((ToDay));
+
+          ToDay = new Date("05-09-2023");
+        document.writeln((ToDay));
+        document.writeln((ToDay.getFullYear()));
+        document.writeln((ToDay.getMonth()));
+        document.writeln((ToDay.getDay()));
+        document.writeln((ToDay.getHours()));
+        document.writeln((ToDay.getMinutes()));
+
+
+
+
+
+        
+
+
+
+    </script>
+    
+</body>
+</html>
