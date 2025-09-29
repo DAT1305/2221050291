@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai12</title>
+</head>
+<body>
+    <script>
+      //   let a, b , c , d;
+          //  a = [1, 2 , 3];
+          //  b = "Javascript"
+           // c = [42 , "JS"];
+            
+        //    d = a.concat(b, c);
+           // d = d.join(' ');
+           // bỏ phần tử cuối
+//d.pop();
+         //   //push vào cuối
+          //  d.push("khởi");
+          //  d.reverse();
+          //  d.shift();
+             
+        
+           // document.writeln(d);
+            let so = 10000000000001; //10000000000001[22] lấy ra số thứ 22 là 1
+            
+            let SoCuoi = parseInt(so[so.length -1]);
+            document.writeln("test");
+            
+            let now = new Date().getHours();
+            document.writeln(now);
+            if( now > 5){
+                if(now < 10){
+                    document.writeln("chào sáng");
+                }
+                
+            }
+             else if(now > 10 && now < 13){
+                
+                    document.writeln("chào trưa");
+                
+
+            }
+            else if(now > 13 && now < 17){
+                
+                    document.writeln("chào chiều");
+                
+
+
+            }
+            else if(now > 17  && now < 22){
+                
+                document.writeln("chào tối");
+            }
+            else{
+                document.writeln("còn lại");
+            };
+            let a, b , c;
+            a = 11;
+            b = 11;
+            c = 12  ;
+            let tong = (a * 0.6)+ (b * 0.3 )+ (c * 0.1);
+            if(tong < 0 ||  tong > 10){
+                document.writeln("không hợp lệ");
+                
+            }
+            else if( tong < 4){
+                document.writeln("F");
+
+            }
+            else if(tong > 5 && tong < 7){
+                document.writeln("C");
+
+            }
+            else if(tong > 4 && tong < 5){
+                document.writeln("D");
+
+            }
+            else if(tong > 7 && tong < 8){
+                document.writeln("B");
+
+            }
+            else{
+                document.writeln("A");
+            };
+
+                
+
+            
+
+
+
+
+
+    </script>
+</body>
+</html>

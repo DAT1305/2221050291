@@ -64,6 +64,7 @@
         document.writeln( mystring.split(2)); //kiem tra su ton tai
 
        document.writeln(  mystring.startsWith("h"));
+      
         //rut gọn int
         let pi = 3.1424241;
       document.writeln(  pi.toFixed(2));
@@ -82,6 +83,29 @@
         document.writeln((ToDay.getDay()));
         document.writeln((ToDay.getHours()));
         document.writeln((ToDay.getMinutes()));
+        
+        //mab
+        let array = [1 , 2 , 3, 4, 5, 6, 7 , 'a' , 'c'];
+        document.writeln(Array.isArray(array));
+        document.writeln(array.indexOf(3));
+        document.writeln(array.lastIndexOf('a'));
+        array[3] = 6;
+
+
+            let a, b , c , d;
+            a = [1, 2 , 3];
+            b = "Javascript"
+            c = [42 , "JS"];
+            d = a.concat(b, c);
+            document.writeln(d);
+
+       // document.writeln(array.length);
+        //for(let i = 0; i < 7 ; i ++){
+        //    document.writeln(array[i]);
+
+       // }       
+        
+        
 
 
 
