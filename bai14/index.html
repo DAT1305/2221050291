@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai14</title>
+</head>
+<body>
+    <script>
+        function tong(){
+            let KetQua = 0;
+            let soA = parseInt(document.getElementById("A").value);
+            let soB = parseInt(document.getElementById("B").value);
+            KetQua = soA + soB;
+            document.getElementById("Kq").value = KetQua;
+
+        }
+        function tru(){
+            let KetQua = 0;
+            let soA = parseInt(document.getElementById("A").value);
+            let soB = parseInt(document.getElementById("B").value);
+            KetQua = soA - soB;
+            document.getElementById("Kq").value = KetQua;
+
+        }
+        function nhan(){
+            let KetQua = 0;
+            let soA = parseInt(document.getElementById("A").value);
+            let soB = parseInt(document.getElementById("B").value);
+            KetQua = soA * soB;
+            document.getElementById("Kq").value = KetQua;
+
+        }
+        function chia(){
+            let KetQua = 0;
+            let soA = parseInt(document.getElementById("A").value);
+            let soB = parseInt(document.getElementById("B").value);
+            KetQua = soA / soB;
+            document.getElementById("Kq").value = KetQua;
+
+        }
+
+    </script>
+    nhap a<input id = "A" placeholder = "nhap a: ">
+    nhap b<input id = "B" placeholder = "nhap b: ">
+     <button onclick="tong()">tinh tong</button>
+     <button onclick="tru()">tinh tru</button>
+     <button onclick="nhan()">tinh nhan</button>
+     <button onclick="chia()">tinh chia</button>
+
+    <input type = "text" id = "Kq">
+</body>
+</html>

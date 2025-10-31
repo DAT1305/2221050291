@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bmi</title>
+</head>
+<body>
+    nhap can nang<input id = "A" placeholder = "nhap a: ">
+    nhap chieu cao(mét)<input id = "B" placeholder = "nhap b: ">
+     <button onclick="bmi()" >tinh bmi</button>
+     
+
+    <input type = "text" id = "Kq">
+    <br>
+    <img width = "100px" src = "">
+    <h1></h1>
+    <script>
+        
+        function bmi(){
+            let KetQua = 0;
+            let soA = parseFloat(document.getElementById("A").value);
+            let soB = parseFloat(document.getElementById("B").value);
+            KetQua = soA / (soB * soB);
+            document.getElementById("Kq").value = KetQua;
+            if(KetQua <= 18.5 ){
+                
+                document.getElementsByTagName('img')[0].src = "BMI (1).png"
+                document.getElementsByTagName('h1')[0].innerText = "gay qua an them di"
+            } 
+            if(KetQua > 18.5 && KetQua <= 22.9 ){
+                
+                document.getElementsByTagName('img')[0].src = "BMI (2) (1).png"
+                document.getElementsByTagName('h1')[0].innerText = "on ap"
+            } 
+            if(KetQua > 23 && KetQua <= 24.9){
+                
+                document.getElementsByTagName('img')[0].src = "BMI (3) (1).png"
+                document.getElementsByTagName('h1')[0].innerText = "sap beo phi"
+            } 
+                        if(KetQua > 25 && KetQua <= 29.9){
+
+                
+                document.getElementsByTagName('img')[0].src = "BMI (4) (1).png"
+                document.getElementsByTagName('h1')[0].innerText = "thua can"
+            } 
+                if(KetQua > 30){
+
+                
+                document.getElementsByTagName('img')[0].src = "BMI (3) (2).png"
+                document.getElementsByTagName('h1')[0].innerText = "beo phi"
+            } 
+            
+
+        }
+        
+    </script>
+    
+</body>
+</html>
