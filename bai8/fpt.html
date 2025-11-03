@@ -81,6 +81,9 @@
         body{
             background-color: #333333;
         }
+        .phim{
+            display: flex;
+        }
     </style>
 </head>
 <header>
@@ -110,10 +113,32 @@
     <div class ="container">
         <div class = banner>
             <div class = "top-banner"><img src="image.png" alt=""></div>    
-            <div class = "last-banner"><img src="Screenshot 2025-09-15 134615.png" alt=""></div>    
+            <div class = "last-banner"><img id = 'banner2' src="Screenshot 2025-09-15 134615.png" alt=""> 
+            <div style = "color:white;" id = 'namephim' >
+            </div>
+              <div style = "color:white;" id = 'namsinh' >
+            </div>
+              <div style = "color:white;" id = 'quocgia' >
+            </div>
+             <div  style = "color:white;" id = 'thoiluong' >
+            </div>
+            
+            </div>    
         
         
         </div>
+        <div class = "phim">
+            <div onclick = "clickphim(1)" class = "muado">
+                <img width ="100px " src = "mua-do-top-1-1756596974-4686-1756597005.webp">
+            </div>
+             <div onclick = "clickphim(2)" class = "conan">
+                <img  width ="100px " src = "biqr90h7_1920x1080-conan-viendando.png">
+            </div>
+
+        </div>
+
     </div>
+
 </body>
+<script src = "script.js"></script>
 </html>
