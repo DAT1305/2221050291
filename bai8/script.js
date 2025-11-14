@@ -18,7 +18,27 @@ let danhSachPhim = [
         quocGia: "nhật bản",
         poster: "biqr90h7_1920x1080-conan-viendando.png",
         theLoai: "phim hoạt hình"
-    }
+    },
+     {
+         id : 3,
+        tenPhim: "đào phở piano", 
+        namPhatHanh: 2025,
+        tuoi: 18,
+        thoiLuong:1.5,
+        quocGia: "việt nam",
+        poster: "daopho.webp",
+        theLoai: "lãng mạn sử thi"
+    },
+    {
+         id : 4,
+        tenPhim: "Kỷ băng hà (Ice Age)", 
+        namPhatHanh: 2025,
+        tuoi: 10,
+        thoiLuong:1.2,
+        quocGia: "việt nam",
+        poster: "phim-hoat-hinh-cho-tre-gau-do-bien-hinh-845x475.jpg",
+        theLoai: "Cuộc phiêu lưu, hài kịch, gia đình"
+    },
 ];
 
 let PhimHienTai = danhSachPhim[0];
@@ -30,18 +50,19 @@ let namsinh = document.getElementById('namsinh');
 let quocgia = document.getElementById('quocgia');
 
 let thoiluong = document.getElementById('thoiluong');
-
+let xemphim = document.getElementById('xemphim');
 function clickphim(id){
-    alert(banner);
+    
     for(let i = 0; i < danhSachPhim.length ; i ++){
         if(danhSachPhim[i].id == id){
             banner.src = danhSachPhim[i].poster;
-            namephim.innerText ="tên phim" + danhSachPhim[i].tenPhim;
-            namsinh.innerText = "Năm Phát Hanh " + danhSachPhim[i].namPhatHanh;
+            namephim.innerText ="> " + danhSachPhim[i].tenPhim;
+            namsinh.innerText = "> " + danhSachPhim[i].namPhatHanh;
 
-            quocgia.innerText = "Quốc GIa " + danhSachPhim[i].quocGia;
+            quocgia.innerText = "> " + danhSachPhim[i].quocGia;
 
-            thoiluong.innerText = "Thời LƯợng " + danhSachPhim[i].thoiLuong + "Giờ";
+            thoiluong.innerText = "> " + danhSachPhim[i].thoiLuong + "Giờ";
+            xemphim.style.display ="block";
 
         }
     }

@@ -77,12 +77,27 @@
         }
         .last-banner img {
             width: 100%;
+            height :400px;
         }
         body{
             background-color: #333333;
         }
         .phim{
             display: flex;
+            
+        }
+        .noidung{
+            display: flex;
+        }
+        .anh{
+            width: 230px;
+            height: 100px;
+            margin-right: 10px;
+        }
+        .xemphim{
+            display:none;
+            
+            background-color: orangered;
         }
     </style>
 </head>
@@ -114,25 +129,35 @@
         <div class = banner>
             <div class = "top-banner"><img src="image.png" alt=""></div>    
             <div class = "last-banner"><img id = 'banner2' src="Screenshot 2025-09-15 134615.png" alt=""> 
-            <div style = "color:white;" id = 'namephim' >
+           <div class = "noidung">
+             <div class = "item" style = "color:white;" id = 'namephim' >
             </div>
-              <div style = "color:white;" id = 'namsinh' >
+              <div class = "item" style = "color:white;" id = 'namsinh' >
             </div>
-              <div style = "color:white;" id = 'quocgia' >
+              <div  class = "item" style = "color:white;" id = 'quocgia' >
             </div>
-             <div  style = "color:white;" id = 'thoiluong' >
+             <div  class = "item" style = "color:white;" id = 'thoiluong' >
             </div>
+           </div>
+           <button class = "xemphim" id = "xemphim">Xem ngay</button>
             
-            </div>    
+         </div>    
         
         
         </div>
+        <div class = "tieude"><h1 style = "color:white;" >phim truyền hình</h1></div>
         <div class = "phim">
             <div onclick = "clickphim(1)" class = "muado">
-                <img width ="100px " src = "mua-do-top-1-1756596974-4686-1756597005.webp">
+                <img class = "anh"  src = "mua-do-top-1-1756596974-4686-1756597005.webp">
             </div>
              <div onclick = "clickphim(2)" class = "conan">
-                <img  width ="100px " src = "biqr90h7_1920x1080-conan-viendando.png">
+                <img  class = "anh"  src = "biqr90h7_1920x1080-conan-viendando.png">
+            </div>
+            <div onclick = "clickphim(3)" class = "conan">
+                <img  class = "anh"  src = "daopho.webp">
+            </div>
+            <div onclick = "clickphim(4)" class = "conan">
+                <img  class = "anh"  src = "phim-hoat-hinh-cho-tre-gau-do-bien-hinh-845x475.jpg">
             </div>
 
         </div>
